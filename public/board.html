@@ -9,6 +9,12 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
     <title>Hello, world!</title>
+    <style>
+      #slidepic{
+        width:100%;
+        height:300px;
+      }
+    </style>
   </head>
   <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -34,7 +40,7 @@
                 <a
                   class="nav-link"
                   aria-current="page"
-                  href="/Jaram_Homepage/jak.html"
+                  href="/Jaram_Homepage/index.html#introduce"
                   >자람에 대해...</a
                 >
               </li>
@@ -51,7 +57,7 @@
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                   <li>
-                    <a class="dropdown-item" href="/Jaram_Homepage/jak.html"
+                    <a class="dropdown-item" href="/Jaram_Homepage/board.html"
                       >그룹 스터디</a
                     >
                   </li>
@@ -124,14 +130,45 @@
         <div>
           <div>
             <h1 class="mt-4 mb-4">그룹 스터디</h1>
-            <h3 class="mb-2">이런 저런 활동을 한다.</h3>
+            <h3 class="mb-2">그룹 스터디에서는 관심있는 사람끼리 모여 서로 연구하는 모임이다.</h3>
           </div>
-          <div class="d-flex mb-4 mt-5">
+          <div>
             <!--<img src="img/1548115971686-2.jpg" class="img-fluid" style="width: 400px; height:auto;" > -->
+          <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel" id="slidepic">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="./img/test_image/IMG_1439.jpg" class="d-block w-100" alt="...">
+
+    </div>
+    <div class="carousel-item">
+      <img src="./img/test_image/image13.jpeg" class="d-block w-100" alt="...">
+
+    </div>
+    <div class="carousel-item">
+      <img src="./img/test_image/image12.jpeg" class="d-block w-100" alt="...">
+  
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+<h1 class="mt-4 mb-4" style="padding-top:5rem;text-align:center;">그룹 스터디 게시판</h1>
           </div>
         </div>
       </div>        
-        <ul class="nav justify-content-end">
+        <ul class="nav justify-content-end" style="margin-top:5rem;">
             <li>
                 <form class="d-flex mb-2 mt-2">
                     <input class="form-control me-2" type="search" aria-label="Search" style="text-align:center; width:200px; height:40px; letter-spacing: -5px">
@@ -139,8 +176,8 @@
                 </form>
             </li>
         </ul>
-
-        <div class="card">
+        
+        <div class="card" style="margin-bottom:5rem;">
             <div class="card-body">
                 <!--table-->
                 <table class="table">
