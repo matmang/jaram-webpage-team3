@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <title>Jaram</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link rel="shortcut icon" href="./img/jaram_.ico">
+        
+        <link rel="stylesheet" type="text/css" href="semantic/dist/semantic.min.css">
+<script
+  src="https://code.jquery.com/jquery-3.1.1.min.js"
+  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+  crossorigin="anonymous"></script>
+<script src="semantic/dist/semantic.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/parallax.js/1.4.2/parallax.min.js"></script>
+
+
+    <style>
+
+        header {
+
+          background-image: url("./img/background.jpg");
+            background-size: cover;
+  
+    width: 100%;
+    height: 100%;
+    min-height:700px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+    position:relative;
+        }
+        .homepage_title {
+            text-align: center;
+            color: white;
+            text-transform: uppercase;
+            font-size: 50px;
+        }
+       .homepage_subtitle{
+            text-align: center;
+            color: white;
+            font-size: 20px;
+        }
+        .titles{
+   
+    background-color: rgba(0, 0, 0, 0.5);
+    text-align: center;
+    vertical-align: middle;
+    padding: 21.4%;
+    margin-top:auto;
+    margin-bottom:auto;
+    min-height:700px;
+        } 
+        .card{
+          border: white;
+          
+        } 
+        .card-group{
+          text-align: center;
+        }
+        .card-title{
+          font-size:30px;
+        }
+        .card-img-top {
+        width: 140px;
+         margin:auto;
+}
+@media only screen and (max-height: 767px) {
+/*#cardimg{*/
+/*  width: 200px;*/
+/*  align-items: center;;*/
+/*  margin-right:20%;*/
+/*}*/
+#cardss{
+  padding-left:50px;
+}
+
+
+
+
+}
+#cardss{
+  background-color: #4641D9;
+  color:white;
+}
+.colmd{
+  width: 200px;
+  align-items: center;
+
+}
+.coldmd{
+  width:200px;
+}
+  #cardimg:hover {
+    opacity: 0.5;
+  }
+  #rightitem{
+    float: right;
+  }
+  #piccard {
+   text-align: center;
+  align-self: center;
+  }
+#introduce{
+  background-color: #47C83E;
+  color: white;
+  text-align: center;
+  padding-top: 20rem;
+  padding-bottom: 20rem;
+  max-height:700px;
+}
+/*.bgcolors*/
+/*.bgcolors2*/
+.introtitle{
+  font-size: 40px;
+}
+.introsubtitle{
+  padding-top:4rem;
+  padding-bottom:auto;
+  font-size:20px;
+}
+  #list{
+   /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#87e0fd+0,53cbf1+40,05abe0+100;Blue+3D+%23+16 */
+  background-color: #4641D9;
+  padding-bottom:5rem;
+  }
+  #footer{
+    background-color:#465052;
+  }
+    </style>
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+        <a class="navbar-brand" href="/Jaram_Homepage/index.html">
+      <img src="./img/jaram_.ico" alt="" width="30" height="24">
+      JARAM
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item" style="margin-left:2rem;">
+          <a class="nav-link" aria-current="page" href="#introduce">자람에 대해...</a>
+        </li>
+        <li class="nav-item dropdown" style="margin-left:2rem;">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            자람 스터디
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="/Jaram_Homepage/board.html">그룹 스터디</a></li>
+            <li><a class="dropdown-item" href="/Jaram_Homepage/seminar.html">세미나</a></li>
+            <li><a class="dropdown-item" href="/Jaram_Homepage/jak.html">워크샵</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown" style="margin-left:2rem;">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            자람 활동
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="/Jaram_Homepage/jak.html">신년회</a></li>
+            <li><a class="dropdown-item" href="/Jaram_Homepage/jak.html">체육대회</a></li>
+            <li><a class="dropdown-item" href="/Jaram_Homepage/jak.html">엠티</a></li>
+          </ul>
+        </li>
+        <li class="nav-item" style="margin-left:2rem;">
+          <a class="nav-link" href="#footer">연락</a>
+        </li>
+      </ul>
+            <a class="btn btn-outline-success" href="./login.html" role="button">로그인</a>
+            <a class="btn btn-outline-success" href="./register.html" role="button" style="margin-left:1rem">회원가입</a>
+    </div>
+
+  </div>
+</nav>
+
+
+
+ <header>
+
+
+ 
+<div class="titles">
+<h1 class="homepage_title" style="position:center center;">JARAM</h1>
+<h1 class="homepage_subtitle"style="position:center center;"> 안녕하세요. 한양대학교 ERICA 캠퍼스 소프트웨어융합대학 전공학회 자람입니다. </h1>
+</div>
+
+    
+      </header>
+
+  <section id="introduce">
+    <h1 class="introtitle">안녕하세요!</h1>
+    <p class="introsubtitle">자람은 한양대학교 ERICA 캠퍼스 소프트웨어융합대학 전공 학회로 1984년에 시작해 올해로 35주년을 맞이하였습니다.</p>
+  </section>
+  <section id='list' class=''>
+    <div class="bgcolors">
+     <h1 style="text-align:center;padding-top:5rem;padding-bottom:5rem;color:white;">자람은 기초부터 전문 능력까지 기를 수 있는 학회입니다.</h1>
+     <p style="text-align:center;color:white; font-size:20px;padding-bottom:5rem;">
+       대학교에 진학할때부터 관심분야를 정확히 정하고 오거나 잘하는 사람은 많지 않습니다.<br>
+자람은 세미나를 통해 다양한 분야를 접할 수 있도록 하여 관심분야를 정하는데 도움을 주고,<br>
+관심분야가 정해진 친구들은 스터디를 꾸려 그 분야를 더 깊게 공부할 수 있도록 체계가 이루어져 있습니다.<br>
+또한 매 학기 방학 워크샵을 개최해 한가지 주제에 대해 함께, 그리고 깊이 공부하며<br>
+프로그래밍 능력과 전공분야에 대한 소양을 기릅니다.<br>
+     </p>
+    <div class="card mb-3" style="max-width: 50%;" id="cardss">
+  <div class="row g-0">
+    <div class="col-md-4" onclick = "location.href='/Jaram_Homepage/board.html'">
+      <img src="./img/icon/science.svg" class="img-fluid rounded-start" alt="..." id="cardimg">
+    </div>
+    <div class="col-md-8" id="piccard">
+      <div class="card-body">
+        <h5 class="card-title">그룹 스터디</h5>
+        <p class="card-textr">관심있는 주제에 대해 그룹별로 진행</p>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+ <div class="card mb-3" style="max-width: 50%;margin-top: 3rem;margin-left:47%" id="cardss">
+  <div class="row g-0">
+    <div class="col-md-8" id="piccard">
+      <div class="card-body">
+        <h5 class="card-title">세미나</h5>
+        <p class="card-textr">주 1회 진행</p>
+        
+      </div>
+    </div>
+    <div class="col-md-4" onclick = "location.href='/Jaram_Homepage/seminar.html'">
+      <img src="./img/icon/presentation.svg" class="img-fluid rounded-start" alt="..." id="cardimg">
+    </div>
+  </div>
+</div>
+
+    <div class="card mb-3" style="max-width: 50%;margin-top: 3rem" id="cardss">
+  <div class="row g-10">
+    <div class="col-md-4" onclick = "location.href='/Jaram_Homepage/jak.html'">
+      <img src="./img/icon/pacman.svg" class="img-fluid rounded-start" alt="..." id="cardimg">
+    </div>
+    <div class="col-md-8" id="piccard">
+      <div class="card-body">
+        <h5 class="card-title">워크샵</h5>
+        <p class="card-textr">연중 2회 진행</p>
+        
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+<div class="bgcolors2">
+ <h1 style="text-align:center;padding-top:5rem;padding-bottom:5rem;color:white;">자람은 관계를 중요시하는 학회입니다.</h1>
+     <p style="text-align:center;color:white; font-size:20px;padding-bottom:5rem;">자람은 선배와 후배 구분 없이 모든 학회원들이 가깝게 지낼 수 있도록 하기 위해 여러가지 활동을 하고 있습니다.<br>
+학기 초에는 엠티를 통해 새로 가입한 학회원과 재학생 사이의 어색함을 덜고<br>
+체육대회를 통해서 학회원들이 같이 땀을 흘리면서 모두가 친해질 수 있도록 노력하고 있습니다.<br>
+또한 매년 신년회를 통해서 이미 졸업한 선배와 후배가 소통할 수 있는 공간을 마련하여<br>
+자람 가족의 관계가 계속될 수 있도록 하고 있습니다</p>
+    <div class="card mb-3" style="max-width: 50%;" id="cardss">
+  <div class="row g-0">
+    <div class="col-md-4" onclick = "location.href='/Jaram_Homepage/jak.html'">
+      <img src="./img/icon/fireworks.svg" class="img-fluid rounded-start" alt="..." id="cardimg">
+    </div>
+    <div class="col-md-8" id="piccard">
+      <div class="card-body">
+        <h5 class="card-title">신년회</h5>
+        <p class="card-textr">매년 1학기 개강 전에 진행</p>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+      <div class="card mb-3" style="max-width: 50%;margin-top: 3rem;margin-left:47%" id="cardss">
+  <div class="row g-0">
+    <div class="col-md-8" id="piccard">
+      <div class="card-body">
+        <h5 class="card-title">체육대회</h5>
+        <p class="card-textr">여름 또는 가을에 진행</p>
+        
+      </div>
+    </div>
+    <div class="col-md-4" onclick = "location.href='/Jaram_Homepage/jak.html'">
+      <img src="./img/icon/olympic-games.svg" class="img-fluid rounded-start" alt="..." id="cardimg">
+    </div>
+  </div>
+</div>
+
+    <div class="card mb-3" style="max-width: 50%;margin-top: 3rem" id="cardss">
+  <div class="row g-0">
+    <div class="col-md-4" onclick = "location.href='/Jaram_Homepage/jak.html'">
+      <img src="./img/icon/campfire.svg" class="img-fluid rounded-start" alt="..." id="cardimg">
+    </div>
+    <div class="col-md-8" id="piccard">
+      <div class="card-body">
+        <h5 class="card-title">엠티</h5>
+        <p class="card-textr">연중 2회 진행</p>
+        
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+<!-- <div class="p-3 mb-2 bg-primary bg-gradient text-white">-->
+<!--   <h1 style="text-align:center;margin-top:5rem;">자람 스터디</h1>-->
+<!--   <div class="card-group" style="margin-top:5rem;">-->
+<!--  <div class="card bg-primary bg-gradient md-3" onclick = "location.href='/Jaram_Homepage/jak.html'">-->
+    
+<!--    <img src="./img/icon/science.svg" class="card-img-top" alt="...">-->
+<!--    <div class="card-body">-->
+<!--      <h5 class="card-title">그룹 스터디</h5>-->
+      
+<!--    </div>-->
+<!--  </div>-->
+<!--  <div class="card bg-primary bg-gradient" onclick = "location.href='/Jaram_Homepage/jak.html'">-->
+<!--    <img src="./img/icon/presentation.svg" class="card-img-top" alt="...">-->
+    
+<!--    <div class="card-body">-->
+<!--      <h5 class="card-title">세미나</h5>-->
+
+<!--    </div>-->
+<!--  </div>-->
+<!--  <div class="card bg-primary bg-gradient" onclick = "location.href='/Jaram_Homepage/jak.html'">-->
+<!--    <img src="./img/icon/pacman.svg" class="card-img-top" alt="...">-->
+<!--    <div class="card-body">-->
+<!--      <h5 class="card-title">워크샵</h5>-->
+<!--    </div>-->
+<!--  </div>-->
+<!--</div>-->
+<!--    <h1 style="text-align:center;margin-top:5rem;">자람 친목 활동</h1>-->
+<!--   <div class="card-group" style="margin-top:5rem;margin-bottom:5rem;">-->
+<!--  <div class="card bg-primary bg-gradient md-3" onclick = "location.href='/Jaram_Homepage/jak.html'">-->
+    
+<!--    <img src="./img/icon/fireworks.svg" class="card-img-top" alt="...">-->
+<!--    <div class="card-body">-->
+<!--      <h5 class="card-title">신년회</h5>-->
+      
+<!--    </div>-->
+<!--  </div>-->
+<!--  <div class="card bg-primary bg-gradient" onclick = "location.href='/Jaram_Homepage/jak.html'">-->
+<!--    <img src="./img/icon/olympic-games.svg" class="card-img-top" alt="...">-->
+    
+<!--    <div class="card-body">-->
+<!--      <h5 class="card-title">체육대회</h5>-->
+
+<!--    </div>-->
+<!--  </div>-->
+<!--  <div class="card bg-primary bg-gradient" onclick = "location.href='/Jaram_Homepage/jak.html'">-->
+<!--    <img src="./img/icon/campfire.svg" class="card-img-top" alt="...">-->
+<!--    <div class="card-body">-->
+<!--      <h5 class="card-title">엠티</h5>-->
+<!--    </div>-->
+<!--  </div>-->
+<!--</div>-->
+<!--</div>-->
+</section>
+<footer id="footer">
+  <h1 style="text-transform: uppercase;color:white;text-align:center;padding-top:3rem;padding-bottom:3rem;">저희와 만나고 싶으시다면</h1>
+  <div class="container" style="padding-bottom:3rem;">
+  <div class="row">
+    <div class="col">
+      <img src="./img/icon/book.svg" class="rounded mx-auto d-block" alt="..." width="150px" style="background-color:rounded black;">
+      <div style="text-align:center;color:white;padding-top:1rem;">
+      <h3 style="text-align:center;color:white;padding-top:1rem;">이메일 주소</h3>
+      <p style="">hyu.cse.jaram@gmail.com</p>
+      </div>
+    </div>
+    <div class="col">
+      <div style="text-align:center;color:white;padding-top:1rem;">
+      <img src="./img/icon/github.svg" class="rounded mx-auto d-block" alt="..." width="150px">
+      <div class="d-grid gap-2 d-md-block" style="margin-top:2rem;">
+<a class="btn btn-outline-primary" href="https://github.com/Jaram" rel="noopener" target="_blank" aria-label="Follow @Jaram on GitHub"><svg viewBox="0 0 16 16" width="16" height="16" class="octicon octicon-mark-github" aria-hidden="true"><path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path></svg>&nbsp;<span>Follow @Jaram</span></a>
+  <a class="btn btn-outline-primary" href="https://github.com/Jaram2019" rel="noopener" target="_blank" aria-label="Follow @Jaram on GitHub"><svg viewBox="0 0 16 16" width="16" height="16" class="octicon octicon-mark-github" aria-hidden="true"><path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path></svg>&nbsp;<span>Follow @Jaram2019</span></a>
+</div>
+      </div>
+
+    </div>
+    <div class="col">
+      <h3 style="text-align:center;color:white;padding-top:1rem;">학회방</h3>
+     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d561.0731714851948!2d126.83611145002736!3d37.29728684023052!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357b6eed8d3da293%3A0xc7272b92252eb894!2z7JWI7IKw7IucIOyCrDPrj5kg7ZWc7JaR64yA7ZWZ6rWQIOygnDPqs7XtlZnqtIA!5e0!3m2!1sko!2skr!4v1627413152407!5m2!1sko!2skr" width="400" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+     <p style="text-align:center;color:white;padding-top:1rem;">한양대학교 ERICA캠퍼스 제3공학관 지하107호</p>
+    </div>
+  </div>
+</div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+      
+  
+
+    </body>
+</html>
