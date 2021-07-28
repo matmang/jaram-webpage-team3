@@ -34,7 +34,7 @@ const Nweet = ({ nweetObj, isOwner }) => {
           <form onSubmit={onSubmit} className="container nweetEdit">
             <input
               type="text"
-              placeholder="Edit your nweet"
+              placeholder="Edit your post"
               value={newNweet}
               required
               autoFocus
