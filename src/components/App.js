@@ -5,7 +5,7 @@ import LandingPage from "./LandingPage";
 import NavBar from "./NavBar";
 import Introduce from "./Introduce";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import Auth from "../routes/Auth";
+import Board from "./Board"
 import Footer from "./Footer";
 
 function App() {
@@ -35,7 +35,7 @@ function App() {
   };
   return (
     <Router>
-      <NavBar />
+      <NavBar userObj={userObj}/>
       <Switch>
         <Route exact path="/">
           <LandingPage />
@@ -54,6 +54,9 @@ function App() {
               "Initializing..."
             )}
           </>
+        </Route>
+        <Route exact path="/board">
+          <Board />
         </Route>
       </Switch>
     </Router>

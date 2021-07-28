@@ -3,7 +3,7 @@ import React from "react";
 function Footer() {
   return (
     <>
-      <footer id="footer" style={{backgroundColor: "#465052"}}>
+      <footer id="footer" style={{ backgroundColor: "#465052" }}>
         <h1
           style={{
             textTransform: "uppercase",
@@ -15,12 +15,15 @@ function Footer() {
         >
           저희와 만나고 싶으시다면
         </h1>
-        <div class="container" style={{ paddingBottom: "3rem", backgroundColor: "#465052"}}>
-          <div class="row">
-            <div class="col">
+        <div
+          className="container"
+          style={{ paddingBottom: "3rem", backgroundColor: "#465052" }}
+        >
+          <div className="row">
+            <div className="col">
               <img
                 src="./img/icon/book.svg"
-                class="rounded mx-auto d-block"
+                className="rounded mx-auto d-block"
                 alt="..."
                 width="150px"
                 style={{ backgroundColor: "black" }}
@@ -44,7 +47,7 @@ function Footer() {
                 <p>hyu.cse.jaram@gmail.com</p>
               </div>
             </div>
-            <div class="col">
+            <div className="col">
               <div
                 style={{
                   textAlign: "center",
@@ -54,16 +57,16 @@ function Footer() {
               >
                 <img
                   src="./img/icon/github.svg"
-                  class="rounded mx-auto d-block"
+                  className="rounded mx-auto d-block"
                   alt="..."
                   width="150px"
                 />
                 <div
-                  class="d-grid gap-2 d-md-block"
+                  className="d-grid gap-2 d-md-block"
                   style={{ marginTop: "2rem" }}
                 >
                   <a
-                    class="btn btn-outline-primary"
+                    className="btn btn-outline-primary"
                     href="https://github.com/Jaram"
                     rel="noopener"
                     target="_blank"
@@ -73,7 +76,7 @@ function Footer() {
                       viewBox="0 0 16 16"
                       width="16"
                       height="16"
-                      class="octicon octicon-mark-github"
+                      className="octicon octicon-mark-github"
                       aria-hidden="true"
                     >
                       <path
@@ -84,7 +87,7 @@ function Footer() {
                     &nbsp;<span>Follow @Jaram</span>
                   </a>
                   <a
-                    class="btn btn-outline-primary"
+                    className="btn btn-outline-primary"
                     href="https://github.com/Jaram2019"
                     rel="noopener"
                     target="_blank"
@@ -94,7 +97,7 @@ function Footer() {
                       viewBox="0 0 16 16"
                       width="16"
                       height="16"
-                      class="octicon octicon-mark-github"
+                      className="octicon octicon-mark-github"
                       aria-hidden="true"
                     >
                       <path
@@ -107,7 +110,7 @@ function Footer() {
                 </div>
               </div>
             </div>
-            <div class="col">
+            <div className="col">
               <h3
                 style={{
                   textAlign: "center",
@@ -121,7 +124,7 @@ function Footer() {
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d561.0731714851948!2d126.83611145002736!3d37.29728684023052!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357b6eed8d3da293%3A0xc7272b92252eb894!2z7JWI7IKw7IucIOyCrDPrj5kg7ZWc7JaR64yA7ZWZ6rWQIOygnDPqs7XtlZnqtIA!5e0!3m2!1sko!2skr!4v1627413152407!5m2!1sko!2skr"
                 width="400"
                 height="200"
-                style={{border: "0"}}
+                style={{ border: "0" }}
                 allowfullscreen=""
                 loading="lazy"
               ></iframe>

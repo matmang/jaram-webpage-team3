@@ -51,7 +51,7 @@ function Introduce() {
             <div class="row g-0">
               <div
                 class="col-md-4"
-                onclick="location.href='/Jaram_Homepage/board.html'"
+                onclick="location.href='/board'"
               >
                 <img
                   src="./img/icon/science.svg"

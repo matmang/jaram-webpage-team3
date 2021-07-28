@@ -1,6 +1,6 @@
 import React from "react";
 
-function NavBar(props) {
+function NavBar({userObj}) {
   const onClickHandler = (event) => {
     event.push("/login");
   };
@@ -93,9 +93,11 @@ function NavBar(props) {
               </a>
             </li>
           </ul>
-          <a class="btn btn-outline-success" href="/login" role="button">
+          {userObj ? <a class="btn btn-outline-success" href="/login" role="button">
+            프로필
+          </a> : <a class="btn btn-outline-success" href="/login" role="button">
             로그인
-          </a>
+          </a>}
         </div>
       </div>
     </nav>
