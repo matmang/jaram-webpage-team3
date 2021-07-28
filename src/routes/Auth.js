@@ -3,7 +3,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { authService, firebaseInstance } from "../fbase";
 import AuthForm from "../components/AuthForm";
 
-
 const Auth = () => {
   const onSocialClick = async (event) => {
     const {

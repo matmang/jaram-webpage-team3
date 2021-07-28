@@ -8,15 +8,15 @@ import Navigation from "./navigation";
 const AppRouter = ({ refreshUser, isLoggedIn, userObj }) => {
   return (
     <Router>
-      {isLoggedIn && <Navigation userObj={userObj}/>}
+      {isLoggedIn && <Navigation userObj={userObj} />}
       <Switch>
         {isLoggedIn ? (
           <>
             <Route exact path="/">
-              <Home userObj={userObj}/>
+              <Home userObj={userObj} />
             </Route>
             <Route exact path="/profile">
-              <Profile userObj={userObj} refreshUser={refreshUser}/>
+              <Profile userObj={userObj} refreshUser={refreshUser} />
             </Route>
           </>
         ) : (

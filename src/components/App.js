@@ -1,6 +1,12 @@
 import React, { useState, useEffect } from "react";
 import AppRouter from "./Router";
 import { authService } from "../fbase";
+import LandingPage from "./LandingPage";
+import NavBar from "./NavBar";
+import Introduce from "./Introduce";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import Auth from "../routes/Auth";
+import Footer from "./Footer";
 
 function App() {
   const [init, setInit] = useState(false);
@@ -28,17 +34,29 @@ function App() {
     });
   };
   return (
-    <>
-      {init ? (
-        <AppRouter
-          refreshUser={refreshUser}
-          isLoggedIn={Boolean(userObj)}
-          userObj={userObj}
-        />
-      ) : (
-        "Initializing..."
-      )}
-    </>
+    <Router>
+      <NavBar />
+      <Switch>
+        <Route exact path="/">
+          <LandingPage />
+          <Introduce />
+          <Footer />
+        </Route>
+        <Route exact path="/login">
+          <>
+            {init ? (
+              <AppRouter
+                refreshUser={refreshUser}
+                isLoggedIn={Boolean(userObj)}
+                userObj={userObj}
+              />
+            ) : (
+              "Initializing..."
+            )}
+          </>
+        </Route>
+      </Switch>
+    </Router>
   );
 }
 
