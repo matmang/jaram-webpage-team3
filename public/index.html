@@ -24,9 +24,6 @@
     <script src="semantic/dist/semantic.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/parallax.js/1.4.2/parallax.min.js"></script>
-    <script>
-      $(".parallax-window").parallax({ imageSrc: "./img/background.jpg" });
-    </script>
 
     <style>
       header {
@@ -131,6 +128,7 @@
     </style>
   </head>
   <body>
+    <div id="root"></div>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <div class="container-fluid">
         <a class="navbar-brand" href="/Jaram_Homepage/index.html">
@@ -168,7 +166,7 @@
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                 <li>
-                  <a class="dropdown-item" href="board.html"
+                  <a class="dropdown-item" href="/Jaram_Homepage/board.html"
                     >그룹 스터디</a
                   >
                 </li>
@@ -217,18 +215,16 @@
               <a class="nav-link" href="#footer">연락</a>
             </li>
           </ul>
-          <form class="d-flex">
-            <button class="btn btn-outline-success" type="submit" onclick="location.href='login.html'">
-              로그인
-            </button>
-            <button
-              class="btn btn-outline-success"
-              type="submit"
-              style="margin-left: 1rem"
-            >
-              회원가입
-            </button>
-          </form>
+          <a class="btn btn-outline-success" href="./login.html" role="button"
+            >로그인</a
+          >
+          <a
+            class="btn btn-outline-success"
+            href="./register.html"
+            role="button"
+            style="margin-left: 1rem"
+            >회원가입</a
+          >
         </div>
       </div>
     </nav>
@@ -282,7 +278,10 @@
         </p>
         <div class="card mb-3" style="max-width: 50%" id="cardss">
           <div class="row g-0">
-            <div class="col-md-4" onclick="location.href='./board.html'">
+            <div
+              class="col-md-4"
+              onclick="location.href='board.html'"
+            >
               <img
                 src="./img/icon/science.svg"
                 class="img-fluid rounded-start"
@@ -311,7 +310,10 @@
                 <p class="card-textr">주 1회 진행</p>
               </div>
             </div>
-            <div class="col-md-4" onclick="location.href='./seminar.html'">
+            <div
+              class="col-md-4"
+              onclick="location.href='/Jaram_Homepage/seminar.html'"
+            >
               <img
                 src="./img/icon/presentation.svg"
                 class="img-fluid rounded-start"
@@ -328,7 +330,10 @@
           id="cardss"
         >
           <div class="row g-10">
-            <div class="col-md-4" onclick="location.href='./jak.html'">
+            <div
+              class="col-md-4"
+              onclick="location.href='/Jaram_Homepage/jak.html'"
+            >
               <img
                 src="./img/icon/pacman.svg"
                 class="img-fluid rounded-start"
@@ -376,7 +381,10 @@
         </p>
         <div class="card mb-3" style="max-width: 50%" id="cardss">
           <div class="row g-0">
-            <div class="col-md-4" onclick="location.href='./jak.html'">
+            <div
+              class="col-md-4"
+              onclick="location.href='/Jaram_Homepage/jak.html'"
+            >
               <img
                 src="./img/icon/fireworks.svg"
                 class="img-fluid rounded-start"
@@ -405,7 +413,10 @@
                 <p class="card-textr">여름 또는 가을에 진행</p>
               </div>
             </div>
-            <div class="col-md-4" onclick="location.href='./jak.html'">
+            <div
+              class="col-md-4"
+              onclick="location.href='/Jaram_Homepage/jak.html'"
+            >
               <img
                 src="./img/icon/olympic-games.svg"
                 class="img-fluid rounded-start"
@@ -422,7 +433,10 @@
           id="cardss"
         >
           <div class="row g-0">
-            <div class="col-md-4" onclick="location.href='./jak.html'">
+            <div
+              class="col-md-4"
+              onclick="location.href='/Jaram_Homepage/jak.html'"
+            >
               <img
                 src="./img/icon/campfire.svg"
                 class="img-fluid rounded-start"
@@ -503,8 +517,5 @@
       integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
       crossorigin="anonymous"
     ></script>
-  </body>
-  <body>
-    <div id="root"></div>
   </body>
 </html>
