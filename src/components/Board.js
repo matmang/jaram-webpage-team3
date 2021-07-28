@@ -2,12 +2,28 @@ import React from "react";
 
 function Board() {
   return (
-    <div className = "container" style={{backgroundColor: "black"}}>
+    <div
+      style={{
+        backgroundColor: "white",
+        paddingLeft: "5rem",
+        paddingRight: "5rem",
+        paddingTop: "2rem",
+      }}
+    >
       <div class="top">
         <div>
           <div>
-            <h1 class="mt-4 mb-4">그룹 스터디</h1>
-            <h3 class="mb-2">
+            <h1
+              class="mt-4 mb-4"
+              style={{
+                color: "black",
+                fontSize: "30px",
+                fontFamily: "fantasy",
+              }}
+            >
+              그룹 스터디
+            </h1>
+            <h3 class="mb-2" style={{ color: "black" }}>
               그룹 스터디에서는 관심있는 사람끼리 모여 서로 연구하는 모임이다.
             </h3>
           </div>
@@ -89,13 +105,21 @@ function Board() {
               </button>
             </div>
 
-            <h1 class="mt-4 mb-4" style={{paddingTop: "5rem", textAlign: "center"}}>
+            <h1
+              class="mt-4 mb-4"
+              style={{
+                paddingTop: "5rem",
+                textAlign: "center",
+                color: "black",
+                fontSize: "30px",
+              }}
+            >
               그룹 스터디 게시판
             </h1>
           </div>
         </div>
       </div>
-      <ul class="nav justify-content-end" style={{marginTop: "5rem"}}>
+      <ul class="nav justify-content-end" style={{ marginTop: "5rem" }}>
         <li>
           <form class="d-flex mb-2 mt-2">
             <input
@@ -103,11 +127,11 @@ function Board() {
               type="search"
               aria-label="Search"
               style={{
-                  textAlign: "center",
-                  width: "200px",
-                  height: "40px",
-                  letterSpacing: "-5px",
-                }}
+                textAlign: "center",
+                width: "200px",
+                height: "40px",
+                letterSpacing: "-5px",
+              }}
             />
             <button type="button" class="btn btn-outline-secondary">
               검색
@@ -116,7 +140,7 @@ function Board() {
         </li>
       </ul>
 
-      <div class="card" style={{marginBottom: "5rem"}}>
+      <div class="card" style={{ marginBottom: "5rem" }}>
         <div class="card-body">
           <table class="table">
             <thead>

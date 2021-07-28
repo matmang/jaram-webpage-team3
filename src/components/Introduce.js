@@ -49,9 +49,9 @@ function Introduce() {
           </p>
           <div class="card mb-3" style={{maxWidth : "50%"}} id="cardss">
             <div class="row g-0">
-              <div
+              <a
                 class="col-md-4"
-                onclick="location.href='/board'"
+                href="/board"
               >
                 <img
                   src="./img/icon/science.svg"
@@ -59,7 +59,7 @@ function Introduce() {
                   alt="..."
                   id="cardimg"
                 />
-              </div>
+              </a>
               <div class="col-md-8" id="piccard">
                 <div class="card-body">
                   <h5 class="card-title">그룹 스터디</h5>
